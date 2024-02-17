@@ -1,0 +1,406 @@
+.body{
+  height: 125vh;
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 80px;
+  padding: 30px;
+}
+header img{
+  height: 50px;
+  margin-left: 0px;
+}
+.header{
+  background-color:rgba(0, 0, 0, 0.007);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+}
+.header *{
+  display:flex ;
+  align-items: center;
+  background-color: rgba(221, 160, 221, 0);
+  justify-content:flex-end;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.active a{
+  background-color: #04e0f0 ;
+}
+.header li{
+  margin: 15px;
+  border: black;
+  border-radius: 20px;
+  padding: 5px 14px;
+  height: 0px;
+  
+}
+
+.header li a{
+ color: black;
+ text-decoration: solid;
+ margin-right: 0px;
+ margin-left: 5px;
+ font-size: 20px;
+ font-weight: 200;
+justify-content: center;
+
+}
+.header li a:hover{
+  border-radius: 0px;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid yellowgreen;
+  color: rgb(255, 0, 221);
+  transition: 0.3s ease;
+}
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+    /* The image used */
+    .parallax.page1 {
+    background-color: rgba(245, 245, 220, 0.377);
+  }
+  
+.hero{
+
+  min-height: 75vh;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero .intro{
+  justify-content:flex-end ;
+  margin-right: 200px;
+}
+
+.hero .intro h1{
+  font-size: 30px;
+  margin-left:300px ;
+ margin-top: 200px;
+ color: rgb(0, 0, 0);
+}
+.hero .intro p{
+  font-size: 20px;
+  margin-left:300px ;
+  color: rgb(0, 0, 0);
+}
+.hero .image{
+  justify-content: flex-end;
+  margin-left: 800px;
+  margin-bottom: 100px ;
+  border: 1px solid #000000 ;
+  border-radius: 4px;
+  padding: 5px;
+  height: 300px;
+
+}
+.hero .image:hover{
+  box-shadow: 0 0 2px 2px rgba(0, 247, 255, 0.719);
+}
+#links{
+  text-align: center;
+
+}
+  .links a {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #0084ff;
+    padding: 5px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0px;
+    margin-left: 50px;
+    
+  }
+  .links a:hover{
+    color: rgb(255, 0, 234);
+    transition: 0.3s ease;
+  }
+  #line {
+    width: 500px;
+    height: 500px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 800px;
+    margin-left: 200px;
+  }
+  
+  #line:nth-child(1) {
+    border-bottom: 8px solid rgb(138, 1, 131);
+    animation: rotate1 2s linear infinite;
+  }
+  
+  @keyframes rotate1 {
+    from {
+      transform: rotateY(50deg) rotateZ(110deg);
+    }
+  
+    to {
+      transform: rotateY(50deg) rotateZ(470deg);
+    }
+  }
+  
+  #line:nth-child(2) {
+    border-bottom: 8px solid rgb(255, 65, 106);
+    animation: rotate2 2s linear infinite;
+  }
+  
+  @keyframes rotate2 {
+    from {
+      transform: rotateY(20deg) rotateZ(50deg) rotateX(20deg);
+    }
+  
+    to {
+      transform: rotateY(20deg) rotateZ(50deg) rotateX(380deg);
+    }
+  }
+  
+  #line:nth-child(3) {
+    border-bottom: 8px solid yellowgreen;
+    animation: rotate3 1.5s linear infinite;
+  }
+  
+  @keyframes rotate3 {
+    from {
+      transform: rotateY(40deg) rotateX(130deg) rotateZ(450deg);
+    }
+  
+    to {
+      transform: rotateY(40deg) rotateX(130deg) rotateZ(90deg);
+    }
+  }
+  
+  #line:nth-child(4) {
+    border-bottom: 8px solid turquoise;
+    animation: rotate4 2s linear infinite;
+  }
+  
+  @keyframes rotate4 {
+    from {
+      transform: rotateX(70deg) rotateZ(270deg);
+    }
+  
+    to {
+      transform: rotateX(70deg) rotateZ(630deg);
+    }
+  }
+  #social-media{
+    margin-right: 30px;
+    text-align: center;
+    margin-bottom: 250px;
+    margin-top: -350px;
+    margin-left: 30px;
+  }
+.fa{
+   padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  justify-content: flex-start;
+  }
+   .fa:hover{
+    opacity: 0.7;
+  }
+  .fa-whatsapp{
+    background: rgba(136, 253, 1, 0.74);
+    color: rgb(0, 0, 0);
+  }
+  .fa-facebook {
+    background: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+  .fa-instagram {
+    background: rgb(255, 65, 106);
+    color: rgb(0, 0, 0);
+  }
+  .parallax.page2 {
+background-color:rgba(21, 120, 167, 0.199) ;
+  } 
+ 
+  #about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -500px;
+    margin-top: -500px;
+  }
+  #paragraph{
+    justify-content: center;
+    align-items: end;
+    margin-left: 500px;
+    margin-bottom: -500px;
+    margin-top: -450px;
+
+  }
+  
+  #img{
+    justify-content: flex-start;
+    margin-left: 80px;
+    margin-bottom: 100px ;
+    border: 1px solid #000000 ;
+    border-radius: 4px -1px;
+    padding: 5px;
+    width: 300px;
+    height: 400px;
+  
+  }
+  .img:hover{
+    box-shadow: 0 0 2px 2px rgba(255, 0, 200, 0.719);
+  }
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #h3 {
+    color: black;
+    font-weight: bold;
+    font-weight: 1000;
+    font-size: 40px;
+  }
+
+  #my-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 500px;
+   
+  }
+  
+  #h4{
+    color: black;
+    font-weight: bold;
+    font-weight: 1000;
+    font-size: 40px; 
+    margin-bottom: 50px;
+  }
+#h5{
+ justify-content: flex-start;
+margin-left: -200px;
+}
+#qual{
+  padding: 20px;
+  height: 200px;
+  margin-left: -200px;
+  float: left;
+  width: 190px;
+  border-radius: 30px;
+  background: 15px 15px 30px rgb(25,25,25);
+  background-color: plum;
+  color: rgb(0, 0, 0);
+  }
+#qual:hover{
+  color: blue;
+  background-color: turquoise;
+}
+
+#h6{
+  justify-content: center;
+  float: right;
+  margin-left: -50px;
+}
+
+#cert{
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-right: -100px;
+  float: right;
+  border-radius: 30px;
+  background: 15px 15px 30px rgb(25,25,25);
+  background-color: rgba(245, 245, 82, 0.377);
+  color: rgb(0, 0, 0);
+  
+}
+#cert:hover{
+  color: blue;
+  background-color: purple;
+}
+#skill{
+  height: 200px;
+  padding: 60px;
+  margin-bottom: -200px;
+  margin-right: -300px;
+  margin-left: 200px;
+  float: right;
+  border-radius: 30px;
+  background: 15px 15px 30px rgb(25,25,25);
+  background-color: rgba(5, 217, 245, 0.199);
+  color: rgb(0, 0, 0);
+}
+#skill:hover{
+  color: blue;
+  background-color: yellowgreen;
+}
+footer {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+}
+   
+
+#bubble-1{
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-bottom: -200px;
+  background: radial-gradient(rgba(50, 5, 250, 0.295),rgb(255, 255, 255));
+  border-radius: 50%;
+  position: relative;
+  transform: translate(-50%,-50%);
+  animation: move-around 2s infinite;
+ 
+}
+  @keyframes move-around {
+    0% {top: 0px; left: 0px; background: rgba(0, 0, 255, 0.507)}
+    25%{top: 0px; left: 100px; background: rgb(208, 255, 0.507)}
+    50%{top: 100px; left: 100px; background: rgb(255, 94, 0.507)}
+    75%{top: 0px; left: 0px; background: rgb(30, 255, 0.507)}
+    100%{top: 0px; left: 0px; background: rgb(0, 0, 0.507)}
+  }
+  #bubble-2{
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    justify-content: space-between;
+    margin-left: 800px;
+    background: radial-gradient(rgba(250, 5, 168, 0.548),rgb(255, 238, 3));
+    border-radius: 50%;
+    position: relative;
+    animation: move-around 2s infinite;
+   
+  }
+    @keyframes move-around {
+      0% {top: 100px; left: 100px; background: purple}
+      25%{top: 100px; left: 0px; background: rgb(248, 248, 248)}
+      50%{top: 0px; left: 0px; background: red}
+      75%{top: 100px; left: 100px; background: rgb(8, 49, 0)}
+      100%{top: 100px; left: 100px; background: rgb(4, 247, 255)}
+    }
+  
